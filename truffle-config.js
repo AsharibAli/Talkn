@@ -6,8 +6,7 @@ const path = require("path");
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 
 /* ADD YOUR METAMASK SECRET PASSPHRASE */
-const mnemonic =
-  "fix tortoise broken announce section oval veteran excite refuse define carry radar";
+const mnemonic = process.env.MNEMONIC;
 
 module.exports = {
   contracts_build_directory: path.join(__dirname, "client/src/contracts"),
