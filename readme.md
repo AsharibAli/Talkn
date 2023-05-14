@@ -8,18 +8,41 @@ The app was built with an approach to simplify the end user experience of the We
 
 |   |   |
 |---|---|
-| ![Screenshot 1](URL_to_Screenshot1)  | ![Screenshot 2](URL_to_Screenshot2)  |
-| *Description for screenshot 1*  | *Description for screenshot 2*  |
-| ![Screenshot 3](URL_to_Screenshot3)  | ![Screenshot 4](URL_to_Screenshot4)  |
+| ![Home Section](https://github.com/AsharibAli/Talkn/assets/102221198/edf234de-3eaa-4d3a-8830-5c40bcf4678c)  | ![Discover Videos](https://github.com/AsharibAli/Talkn/assets/102221198/7062abc2-cd27-4c66-a32f-7998cae932c6)  |
+| *Home Section*  | *Discover Uploaded Videos*  |
+| ![Channels](https://github.com/AsharibAli/Talkn/assets/102221198/1a81b09e-cbce-4786-a95a-21225729d46e)  | ![Subscribe to Someone](https://github.com/AsharibAli/Talkn/assets/102221198/461a25a3-f51d-4d92-ad00-6b52162651f4)  |
 | *Description for screenshot 3*  | *Description for screenshot 4*  |
-| ![Screenshot 5](URL_to_Screenshot1)  | ![Screenshot 6](URL_to_Screenshot2)  |
+| ![FAQS](https://github.com/AsharibAli/Talkn/assets/102221198/814d19b1-5559-4487-82f7-41b2a477a643)  | ![Search Videos](https://github.com/AsharibAli/Talkn/assets/102221198/80de4e1c-a169-41c9-9cdc-611fa3149db7)  |
 | *Description for screenshot 5*  | *Description for screenshot 6*  |
-| ![Screenshot 7](URL_to_Screenshot3)  | ![Screenshot 8](URL_to_Screenshot4)  |
+| ![Wallet Connect](https://github.com/AsharibAli/Talkn/assets/102221198/f49d7353-0975-402f-814b-43e7a2809801)  | ![Create a Channel](https://github.com/AsharibAli/Talkn/assets/102221198/2f9c9d16-b63e-4dcd-8094-7c537e7346cc)  |
 | *Description for screenshot 7*  | *Description for screenshot 8*  |
-| ![Screenshot 9](URL_to_Screenshot1)  | ![Screenshot 10](URL_to_Screenshot2)  |
+| ![Upload your Video](https://github.com/AsharibAli/Talkn/assets/102221198/8b90a360-de09-4db1-a101-550c99357879)  | ![Trending Channels](https://github.com/AsharibAli/Talkn/assets/102221198/320f51b9-f758-4bd9-b256-0aaa46f5c8b3)  |
 | *Description for screenshot 9*  | *Description for screenshot 10*  |
-| ![Screenshot 11](URL_to_Screenshot3)  | ![Screenshot 12](URL_to_Screenshot4)  |
+| ![Subscribe to Someone](https://github.com/AsharibAli/Talkn/assets/102221198/461a25a3-f51d-4d92-ad00-6b52162651f4)  | ![Subscribe to Someone](https://github.com/AsharibAli/Talkn/assets/102221198/461a25a3-f51d-4d92-ad00-6b52162651f4)  |
 | *Description for screenshot 11*  | *Description for screenshot 12*  |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 🎥 Talkn Demo Video
 
