@@ -1,0 +1,524 @@
+/*
+* ----------------------------------------------------------------------
+* GENERAL STYLING [NAVABR & FOOTER & LAYOUT] 
+* ----------------------------------------------------------------------
+*/
+
+// SCROLLBARS -------------------------------
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $primary;
+    border-radius: 30rem;
+    background-color: rgb(133, 133, 141);
+    outline: 1px solid slategrey;
+}
+
+// NAVBAR -------------------------------
+.navbar {
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.06);
+    border-radius: 0.5rem;
+    background: none !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: all 0.3s;
+    position: relative;
+    &::before {
+        content: '';
+        background: rgba($body-bg, 0.9) !important;
+        border-radius: 0.5rem;
+        transition: all 0.3s;
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+        bottom: -1rem;
+        left: -1rem;
+        transition: all 0.3s;
+        opacity: 0;
+    }
+
+    @include media-breakpoint-down(lg) {
+        &::before {
+            content: '';
+            background: rgba($body-bg, 0.9) !important;
+            border-radius: 0.5rem;
+            transition: all 0.3s;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 1;
+        }
+        padding: 1rem !important;
+    }
+    .container {
+        z-index: 999;
+        position: relative;
+    }
+    &-brand {
+        position: relative;
+        z-index: 999;
+    }
+    &.active {
+        &::before {
+            opacity: 1;
+        }
+    }
+
+    & > .container {
+        transition: all 0.3s;
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
+    }
+
+    &-dark {
+        background: $card-bg;
+    }
+
+    > .container {
+        border-radius: 0.5rem;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        font-weight: $font-weight-bold;
+    }
+    .collapse {
+        position: relative;
+        z-index: 9999;
+    }
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+    font-size: 0.85rem !important;
+    color: $body-color;
+    z-index: 999;
+    position: relative;
+    .navbar-toggler-icon-el {
+        width: 1.4rem;
+        display: inline-block;
+        transition: all, 0.4s;
+        padding: 0.675em 0;
+        text-indent: -119988px;
+        overflow: hidden;
+        text-align: left;
+        text-transform: capitalize;
+        border: none;
+        font-size: 1.2rem;
+        // transform: rotateY(180deg);
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+.navbar-toggler .navbar-toggler-icon-el span {
+    display: block;
+    position: relative;
+    height: 2px;
+    width: 2rem;
+    background-color: #fff;
+}
+.navbar-toggler .navbar-toggler-icon-el span::before,
+.navbar-toggler .navbar-toggler-icon-el span::after {
+    content: '';
+    display: block;
+    background-color: #fff;
+    width: 2rem;
+    height: 2px;
+    width: 1rem;
+    position: absolute;
+    bottom: 0;
+    transform-origin: 50% 50%;
+    transition: all, 0.2s;
+}
+.navbar-toggler .navbar-toggler-icon-el span::before {
+    transform: translateY(-0.3em);
+}
+.navbar-toggler .navbar-toggler-icon-el span::after {
+    transform: translateY(0.3em);
+}
+.navbar-toggler[aria-expanded='true'] {
+    overflow: visible;
+}
+.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon-el span {
+    background-color: transparent;
+}
+.navbar-toggler[aria-expanded='true'] span::before {
+    animation: top-bar 0.4s;
+    animation-fill-mode: forwards;
+}
+.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon-el span::after {
+    animation: bottom-bar 0.4s;
+    animation-fill-mode: forwards;
+}
+@keyframes top-bar {
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: rotate(45deg) translateY(0);
+    }
+}
+@keyframes bottom-bar {
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: rotate(-45deg) translateY(0);
+    }
+}
+
+.main-header {
+    & > .container {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        @include media-breakpoint-down(lg) {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+// NAVBAR -------------------------------
+.main-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+// PAGE HERO BANNER ----------------------
+.page-banner {
+    padding: 11rem 0 5rem;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url('/collection.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    @include media-breakpoint-down(lg) {
+        padding: 11rem 0 2rem;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to bottom, $body-bg, rgba($body-bg, 0.5), transparent);
+        background: linear-gradient(to top, $body-bg, rgba($body-bg, 0.9) 40%, rgba($body-bg, 0.7) 100%);
+    }
+
+    &-content {
+        z-index: 99;
+        position: relative;
+        width: 100%;
+    }
+}
+
+// LAYOUT --------------------------
+.app {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    padding-bottom: 4rem;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 50vw;
+        height: 50vw;
+        background-image: radial-gradient(
+            rgba(92, 92, 118, 0.7490196078431373),
+            rgba(92, 92, 118, 0.0392156862745098),
+            rgba(136, 136, 180, 0)
+        );
+        position: absolute;
+        border-radius: 50%;
+        top: -20vw;
+        left: -20vw;
+    }
+}
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.auth-page {
+    position: relative;
+    &-bg {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        filter: blur(0.7rem) brightness(30%);
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+}
+
+.viewonly-mode {
+    position: fixed;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    z-index: 990;
+}
+
+.hero-slide {
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    position: relative;
+    &:not(.video-single-hero) {
+        padding-bottom: 12rem !important;
+    }
+
+    &-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-position: center center !important;
+        background-size: cover !important;
+        opacity: 0.2;
+        filter: blur(1rem);
+    }
+
+    &-img {
+        border-radius: 1rem;
+    }
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 8rem;
+        z-index: 10;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to top, $body-bg, rgba($body-bg, 0.5) 40%, rgba($body-bg, 0) 100%);
+    }
+
+    &.mock {
+        .hero-slide-bg {
+            background: $body-bg;
+        }
+    }
+}
+
+// VIDEO BOX -----------------------------
+.movie-box {
+    transition: all 0.3s;
+    transform-origin: center center;
+    position: relative;
+
+    .title,
+    .info {
+        transition: all 0.3s;
+        position: relative;
+        z-index: 20;
+    }
+
+    .avatars {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.25rem;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 30rem;
+    }
+
+    &-poster-holder {
+        background: url('/movie-mock-loader.png');
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+
+    &-poster {
+        width: 100%;
+        padding-bottom: 110%;
+
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 100%;
+        }
+        background-size: cover !important;
+        background-position: center center !important;
+        filter: brightness(90%) contrast(107%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(80%)
+            sepia(1%);
+        mix-blend-mode: none;
+        transition: all 0.5s;
+        transform-origin: center center;
+    }
+
+    &-cta {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transform: translateY(101%);
+        display: flex;
+        justify-content: center;
+        transition: all 0.3s;
+    }
+
+    &-poster-holder {
+        box-shadow: 0 4px 8px rgba(darken($body-bg, 5%), 0.5);
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        position: relative;
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: calc(50% - 1rem);
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all 0.3s;
+        }
+    }
+
+    &:hover {
+        z-index: 999;
+        .movie-box-poster {
+            transform: scale(1.08) !important;
+            filter: brightness(30%) contrast(107%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(80%)
+                sepia(1%);
+        }
+        .movie-box-poster-holder {
+            box-shadow: 0 14px 20px rgba(darken($body-bg, 5%), 0.8);
+            .play-icon {
+                opacity: 1;
+                left: 50%;
+            }
+        }
+
+        .movie-box-cta {
+            opacity: 1;
+            transform: none;
+        }
+    }
+}
+
+// CHANNELS -------------------------------
+.channel-card-cover {
+    width: 100%;
+    padding-bottom: 50%;
+    background-size: cover !important;
+    background-position: center center !important;
+    position: relative;
+    border-radius: 0.5rem;
+    background-image: url(/cover-default.png);
+    background-color: darken($card-bg, 1.5%);
+}
+
+.channel-card-avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 5px solid $card-bg;
+    background-size: cover !important;
+    background-position: center center !important;
+    position: absolute;
+    left: 2rem;
+    bottom: -2rem;
+    background-color: darken($card-bg, 3%);
+}
+
+.channel-card-category {
+    background: $card-bg;
+    border-radius: 0.375rem;
+    padding: 0.3rem 1rem;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.channel-page-cover {
+    width: 100%;
+    padding-bottom: 25%;
+
+    @include media-breakpoint-down(xl) {
+        padding-bottom: 30%;
+    }
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 40%;
+    }
+    @include media-breakpoint-down(md) {
+        padding-bottom: 50%;
+    }
+    background-size: cover !important;
+    background-position: center center !important;
+    background-image: url('/cover-default.png');
+    position: relative;
+    border-radius: $card-border-radius;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-image: url('/cover-default.png');
+        border-radius: $card-border-radius;
+        z-index: -1;
+    }
+}
+
+.channel-page-avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 5px solid $card-bg;
+    background-size: cover !important;
+    background-position: center center !important;
+    position: absolute;
+    left: 2rem;
+    bottom: -2rem;
+    z-index: 4;
+    background-color: $card-bg;
+    background-image: url('/user-default.png');
+}
+
+.channel-page-name {
+    position: absolute;
+    bottom: -3rem;
+    transform: translateY(100%);
+}
+
+.preview-modal {
+    max-height: 90vh;
+    overflow: auto;
+}

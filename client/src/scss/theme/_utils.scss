@@ -1,0 +1,737 @@
+/*
+* ===================================================
+*    Custom Bootstrapious Utils
+* ===================================================
+*/
+
+/*
+   Text utils 
+   ------------------------
+*/
+
+.text-uppercase {
+    @include uppercase;
+    letter-spacing: 0.1em;
+}
+
+.text-sm {
+    font-size: $font-size-sm;
+}
+
+.text-xxs {
+    font-size: $font-size-sm * 0.75;
+}
+
+.text-base {
+    font-size: $font-size-base;
+}
+
+.text-lg {
+    font-size: $font-size-lg;
+    @include media-breakpoint-up(lg) {
+        font-size: 2.2rem !important;
+    }
+}
+
+.text-xl {
+    @include media-breakpoint-up(lg) {
+        font-size: 3.2rem !important;
+    }
+}
+
+.text-xxl {
+    @include media-breakpoint-up(lg) {
+        font-size: 5.2rem !important;
+        line-height: 1 !important;
+    }
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow-primary {
+    text-shadow: 2px 2px 2px rgba($primary, 0.1);
+}
+
+.text-decoration-underline {
+    text-decoration: underline;
+}
+
+.text-inherit {
+    color: inherit;
+}
+
+/*
+    Rounded corners - lg, sm 
+   ------------------------
+*/
+
+.rounded-lg {
+    border-radius: $border-radius-lg * 2;
+}
+
+.rounded-sm {
+    border-radius: $border-radius-sm;
+}
+
+.rounded-xl {
+    border-radius: 10rem;
+}
+
+/*
+    Responsive borders - border-[breakpoint]
+   ------------------------
+*/
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        .border#{$infix} {
+            border: $border-width solid $border-color !important;
+        }
+    }
+}
+
+/*
+    Z-index helpers - .z-index-[10-50]   
+    ------------------------
+*/
+
+$z-index: 10 20 30 40 50 100;
+
+@each $current-z-index in $z-index {
+    .z-index-#{$current-z-index} {
+        z-index: #{$current-z-index};
+        position: relative;
+    }
+}
+
+/*
+     Letter spacing helpers - .letter-spacing-[0-5]
+    ------------------------
+*/
+
+.letter-spacing-0 {
+    letter-spacing: 0 !important;
+}
+
+$spacing: 0.1em 0.2em 0.3em 0.4em 0.5em;
+
+@each $current-spacing in $spacing {
+    $i: index($spacing, $current-spacing);
+
+    .letter-spacing-#{$i} {
+        letter-spacing: #{$current-spacing};
+    }
+}
+
+/*
+     Colours and backgrounds
+    ------------------------
+*/
+
+@each $color, $value in $theme-colors {
+    .text-hover-#{$color} {
+        transition: $transition-base;
+
+        &:focus,
+        &:hover {
+            color: $value !important;
+        }
+    }
+
+    a.text-hover-#{$color} {
+        transition: $transition-base;
+
+        &:focus,
+        &:hover {
+            color: $value !important;
+        }
+    }
+
+    .bg-#{$color}-light {
+        background-color: theme-color-level($color, -11);
+    }
+
+    .border-#{$color} {
+        border-color: $value !important;
+    }
+}
+
+@each $color, $value in $grays {
+    .bg-gray-#{$color} {
+        background: $value !important;
+    }
+
+    .bg-gray-850 {
+        background: lighten($card-bg, 4%) !important;
+    }
+
+    .text-gray-#{$color} {
+        color: $value;
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .badge-#{$color}-light {
+        color: $value;
+        background-color: theme-color-level($color, -11);
+    }
+}
+
+/*
+     Transparent overlays
+    ------------------------
+*/
+
+.overlay-content {
+    position: relative;
+    z-index: 20;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    .light-overlay#{$infix},
+    .overlay-hover-light#{$infix} {
+        @include media-breakpoint-up($next) {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                content: ' ';
+                background: #fff;
+            }
+        }
+    }
+
+    .overlay-hover-light#{$infix} {
+        @include media-breakpoint-up($next) {
+            &::after {
+                transition: $transition-fade;
+                opacity: 0;
+            }
+        }
+    }
+
+    .light-overlay#{$infix},
+    .overlay-hover-light#{$infix}:hover {
+        @include media-breakpoint-up($next) {
+            &::after {
+                opacity: 0.4;
+            }
+        }
+    }
+
+    .light-overlay#{$infix}-0,
+    .overlay-hover-light#{$infix}-0:hover {
+        @include media-breakpoint-up($next) {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .dark-overlay#{$infix} {
+        position: relative;
+
+        @include media-breakpoint-up($next) {
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                content: ' ';
+                opacity: 0.4;
+                background: #000;
+            }
+        }
+    }
+
+    .dark-overlay#{$infix}-0 {
+        @include media-breakpoint-up($next) {
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+.page-h-holder {
+    text-align: center;
+    min-height: calc(100vh - 4rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    svg {
+        font-size: 7rem;
+        color: $danger;
+    }
+
+    > div {
+        max-width: 800px;
+        p:last-of-type {
+            font-size: 1.2rem;
+            color: $gray-500;
+        }
+        p:first-of-type {
+            font-size: 3.5rem;
+            font-family: $headings-font-family;
+        }
+    }
+    a {
+        color: $danger;
+    }
+}
+
+/*
+     Other
+    ------------------------
+*/
+
+.overflow-visible {
+    overflow: visible !important;
+}
+
+.shadow-0 {
+    box-shadow: none !important;
+}
+
+.invalid-feedback {
+    background: $danger;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.react-icon {
+    &.pink {
+        color: #ff76ab;
+        filter: drop-shadow(0 2px 2px rgba(255, 118, 171, 0.3));
+    }
+    &.turquoise {
+        color: #9ccea6;
+        filter: drop-shadow(0 2px 2px rgba(156, 206, 166, 0.3));
+    }
+    &.cyan {
+        color: #87d6f5;
+        filter: drop-shadow(0 2px 2px rgba(139, 215, 245, 0.3));
+    }
+    &.orange {
+        color: #ffc994;
+        filter: drop-shadow(0 2px 2px rgba(255, 201, 148, 0.3));
+    }
+}
+
+.card-hover-animated {
+    transition: all 0.3s;
+    &:hover {
+        transform: translateY(-0.4rem);
+        box-shadow: $box-shadow;
+    }
+}
+
+.copyable {
+    cursor: pointer;
+    position: relative;
+    &.bounced {
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform-origin: center center;
+            background: $gray-200;
+            opacity: 0;
+            animation: copied 0.5s 1;
+            border-style: 0.5rem;
+        }
+    }
+}
+
+@keyframes copied {
+    0% {
+        transform: none;
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.3, 1.7);
+        opacity: 0;
+    }
+}
+
+.text-backline {
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 10px;
+        position: absolute;
+        bottom: 6px;
+        left: 0;
+        opacity: 0.15;
+    }
+    @each $color, $value in $theme-colors {
+        &.#{$color} {
+            &::before {
+                background: $value;
+            }
+        }
+    }
+}
+
+.card {
+    &-body {
+        position: relative;
+    }
+
+    &-expand {
+        width: 7rem;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background: #f6f9fb;
+        border-radius: $border-radius-lg;
+        border: none;
+        position: absolute;
+        bottom: 0;
+        transform: translate(-1rem, 1rem);
+        left: 50%;
+        font-weight: $font-weight-bold;
+        color: darken($text-muted, 5%);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.navbar-badge {
+    font-size: 0.6rem;
+    position: absolute;
+    top: -8px;
+    right: 10px;
+}
+
+.avatars {
+    li:not(:first-child) {
+        transform: scale(0.95);
+        margin-left: -1.2rem;
+        -webkit-mask: radial-gradient(circle 23px at 1px 50%, transparent 99%, #fff 100%);
+        mask: radial-gradient(circle 19px at 1px 50%, transparent 99%, #fff 100%);
+    }
+
+    &-sm {
+        li:not(:first-child) {
+            transform: scale(1);
+            margin-left: -0.7rem;
+            -webkit-mask: radial-gradient(circle 15px at 1px 50%, transparent 99%, #fff 100%);
+            mask: radial-gradient(circle 19px at 1px 50%, transparent 99%, #fff 100%);
+        }
+    }
+
+    &.avatars-with-transition {
+        transition: all 0.3s;
+        opacity: 0;
+        pointer-events: none;
+        transition-delay: 0;
+        transform: translateX(12px);
+    }
+}
+
+.no-caret {
+    &::after {
+        display: none;
+    }
+}
+
+.with-transition {
+    transition: all 0.15s;
+}
+
+.headings-font-family {
+    font-family: $headings-font-family, sans-serif !important;
+}
+
+@each $color, $value in $theme-colors {
+    .status-#{$color} {
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        background: rgba($value, 0.2);
+        min-width: 90px;
+        display: inline-block;
+        svg {
+            color: darken($value, 10%);
+        }
+    }
+}
+
+.invalid-feedback {
+    display: block;
+    background: $danger;
+    padding: 0.25rem 0.5rem;
+    color: white;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+}
+
+.btn:focus {
+    box-shadow: none !important;
+}
+
+@each $color, $value in $theme-colors {
+    .btn-opac-#{$color} {
+        background: none !important;
+        color: lighten($value, 45%);
+        border: none !important;
+        position: relative;
+
+        &::before {
+            content: '';
+            top: -2px;
+            right: -2px;
+            bottom: -2px;
+            left: -2px;
+            background: rgba($value, 0.2);
+            position: absolute;
+            display: block;
+            border-radius: $btn-border-radius;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &.cursor-default {
+            &:hover,
+            &:focus {
+                color: lighten($value, 45%) !important;
+            }
+        }
+    }
+}
+
+.cursor-default {
+    cursor: default !important;
+}
+
+.video-mockup {
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #1d1d24;
+    padding: 2.5rem;
+    box-shadow: 0 20px 30px rgba(39, 38, 38, 0.3);
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: #3e3e47;
+        display: block;
+        transform: translateX(-50%);
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding: 1.5rem;
+    }
+}
+
+.search-inner-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    bottom: 8px;
+    border-radius: 0.15rem;
+
+    @include media-breakpoint-down(sm) {
+        position: static;
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+}
+
+.flow-font {
+    font-family: 'Flow Rounded', sans-serif !important;
+}
+
+.form-control {
+    &::placeholder {
+        font-size: 0.9rem;
+    }
+}
+
+.bg-dark {
+    background: darken($body-bg, 2%) !important;
+}
+
+.copy-btn {
+    &.active {
+        svg {
+            animation: copy 0.2s ease-in-out 1;
+            animation-direction: alternate;
+        }
+    }
+}
+
+@keyframes copy {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.nav-tabs.rounded-tabs {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: lighten($body-bg, 1.5%);
+    .nav-link {
+        color: $body-color;
+        border: none;
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+        border-radius: 0.3rem !important;
+        margin-right: 0.2rem;
+
+        &.active {
+            background: #23232e;
+            color: white !important;
+            border: none !important;
+        }
+
+        &:not(.active):hover,
+        &:not(.active):focus {
+            background: lighten($body-bg, 5%);
+            color: white !important;
+            border: none !important;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}
+.border-0.is-invalid {
+    .select__control {
+        border-color: $danger !important;
+    }
+}
+
+.form-check-label {
+    cursor: pointer;
+    transform: translateY(2px);
+}
+
+.channel-card {
+    transition: all 0.3s;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.channel-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 1.5rem;
+    background-size: cover !important;
+    background-position: center center !important;
+
+    &.channel-avatar-md {
+        width: 60px !important;
+        height: 60px !important;
+        border-radius: 1rem;
+    }
+    &.channel-avatar-sm {
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 0.7rem;
+    }
+    &.channel-avatar-xs {
+        width: 30px !important;
+        height: 30px !important;
+        border-radius: 0.7rem;
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .bg-opac-#{$color} {
+        background: rgba($value, 0.2);
+        color: lighten($value, 45%);
+        border: none !important;
+        position: relative;
+    }
+}
+
+.copy-btn {
+    position: relative;
+    .copy-msg {
+        background: lighten($card-bg, 7%);
+        padding: 0.4rem 1rem;
+        border-radius: 0.3rem;
+        color: $gray-300;
+        font-weight: $font-weight-bold;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateY(0) translateX(-50%);
+        text-decoration: none;
+        display: inline-block;
+        opacity: 0;
+        transition: all 0.3s;
+
+        &.active {
+            opacity: 1;
+        }
+        &.transformed {
+            transform: translateY(-120%) translateX(-50%);
+        }
+    }
+}
+
+.badge-premium {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid $warning;
+    color: $warning;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+
+.bg-cover {
+    background-size: cover !important;
+}
+.bg-center {
+    background-position: center center !important;
+}

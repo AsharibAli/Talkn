@@ -1,0 +1,28 @@
+{
+  "name": "talkn",
+  "version": "0.1.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.4.0",
+    "package": "^1.0.1",
+    "unique-names-generator": "^4.7.1"
+  },
+  "devDependencies": {
+    "truffle-hdwallet-provider": "^1.0.17",
+    "truffle-plugin-verify": "^0.6.1"
+  }
+}

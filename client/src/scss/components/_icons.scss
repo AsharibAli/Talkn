@@ -1,0 +1,65 @@
+.bi {
+    width: 1rem;
+    height: 1rem;
+    &.bi-middle {
+        &:before {
+            vertical-align: middle;
+        }
+    }
+    &.bi-sub {
+        &:before {
+            vertical-align: sub;
+        }
+    }
+}
+.stats-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-shrink: 0;
+    i {
+        color: #fff;
+        font-size: 1.7rem;
+    }
+    &.purple {
+        background: linear-gradient(45deg, #9694ff, #a894ff);
+        box-shadow: 0 5px 13px rgba(#a894ff, 0.2);
+    }
+    &.blue {
+        background: linear-gradient(45deg, #57caeb, #5786eb);
+        box-shadow: 0 5px 13px rgba(#5786eb, 0.2);
+    }
+    &.red {
+        background: linear-gradient(45deg, #ff7976, #ff76ab);
+        box-shadow: 0 5px 13px rgba(#ff76ab, 0.2);
+    }
+    &.green {
+        background: linear-gradient(45deg, #5ddab4, #5dd6da);
+        box-shadow: 0 5px 13px rgba(#5dd6da, 0.2);
+    }
+    &.solid-turquoise {
+        background: #9ccea6;
+        color: #3b5861;
+    }
+    &.solid-yellow {
+        background: #f0f3de;
+        color: #4f5243;
+    }
+    &.solid-cyan {
+        background: #bbecff;
+        color: #435055;
+    }
+    &.solid-orange {
+        background: #ffc994;
+        color: #645443;
+    }
+}
+
+.burger-btn {
+    display: none;
+}
