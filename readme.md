@@ -25,7 +25,7 @@ The app was built with an approach to simplify the end user experience of the We
 
 Click on the image below to see our platform demo video.
 
-[![Demo Video](http://img.youtube.com/vi/Un6BFrzk__g/0.jpg)](http://www.youtube.com/watch?v=Un6BFrzk__g "Talkn | The Platform For Talk and Engage in Web3 | Submission in BNBCHAIN Hackathon ")
+[![Demo Video](http://img.youtube.com/vi/WNIpMgsDyXw/0.jpg)](http://www.youtube.com/watch?v=WNIpMgsDyXw "Talkn | The Platform For Talk and Engage in Web3 | Submission in BNBCHAIN Hackathon ")
 
 # 🌐 Overview
 
