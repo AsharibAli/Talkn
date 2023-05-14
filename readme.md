@@ -10,39 +10,16 @@ The app was built with an approach to simplify the end user experience of the We
 |---|---|
 | ![Home Section](https://github.com/AsharibAli/Talkn/assets/102221198/edf234de-3eaa-4d3a-8830-5c40bcf4678c)  | ![Discover Videos](https://github.com/AsharibAli/Talkn/assets/102221198/7062abc2-cd27-4c66-a32f-7998cae932c6)  |
 | *Home Section*  | *Discover Uploaded Videos*  |
-| ![Channels](https://github.com/AsharibAli/Talkn/assets/102221198/1a81b09e-cbce-4786-a95a-21225729d46e)  | ![Subscribe to Someone](https://github.com/AsharibAli/Talkn/assets/102221198/461a25a3-f51d-4d92-ad00-6b52162651f4)  |
-| *Description for screenshot 3*  | *Description for screenshot 4*  |
+| ![Channels](https://github.com/AsharibAli/Talkn/assets/102221198/1a81b09e-cbce-4786-a95a-21225729d46e)  | ![Recent Premium Videos](https://github.com/AsharibAli/Talkn/assets/102221198/c812e24b-381a-4c94-8615-979355b997fb)  |
+| *Creators Channels*  | *Recent Premium Videos*  |
 | ![FAQS](https://github.com/AsharibAli/Talkn/assets/102221198/814d19b1-5559-4487-82f7-41b2a477a643)  | ![Search Videos](https://github.com/AsharibAli/Talkn/assets/102221198/80de4e1c-a169-41c9-9cdc-611fa3149db7)  |
-| *Description for screenshot 5*  | *Description for screenshot 6*  |
+| *Frequently Asked Questions*  | *Search Uploaded Videos*  |
 | ![Wallet Connect](https://github.com/AsharibAli/Talkn/assets/102221198/f49d7353-0975-402f-814b-43e7a2809801)  | ![Create a Channel](https://github.com/AsharibAli/Talkn/assets/102221198/2f9c9d16-b63e-4dcd-8094-7c537e7346cc)  |
-| *Description for screenshot 7*  | *Description for screenshot 8*  |
+| *Connect MetaMask Wallet*  | *Create a Channel*  |
 | ![Upload your Video](https://github.com/AsharibAli/Talkn/assets/102221198/8b90a360-de09-4db1-a101-550c99357879)  | ![Trending Channels](https://github.com/AsharibAli/Talkn/assets/102221198/320f51b9-f758-4bd9-b256-0aaa46f5c8b3)  |
-| *Description for screenshot 9*  | *Description for screenshot 10*  |
-| ![Subscribe to Someone](https://github.com/AsharibAli/Talkn/assets/102221198/461a25a3-f51d-4d92-ad00-6b52162651f4)  | ![Subscribe to Someone](https://github.com/AsharibAli/Talkn/assets/102221198/461a25a3-f51d-4d92-ad00-6b52162651f4)  |
-| *Description for screenshot 11*  | *Description for screenshot 12*  |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| *Upload your Video*  | *Trending Channels*  |
+| ![Subscribe to Someone](https://github.com/AsharibAli/Talkn/assets/102221198/461a25a3-f51d-4d92-ad00-6b52162651f4)  | ![Recent Free Videos](https://github.com/AsharibAli/Talkn/assets/102221198/d54f3265-1ffa-4734-a664-d987a60f8bf9)  |
+| *Subscribe to Someone*  | *Recent Free Videos*  |
 
 ## 🎥 Talkn Demo Video
 
