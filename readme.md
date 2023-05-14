@@ -4,6 +4,25 @@
 
 The app was built with an approach to simplify the end user experience of the Web3 apps. It is running perfectly on all viewports; the end user will not suffer from the usual hassles of the Web3 apps. As a user, no need to go through complicated steps to be a part of this app.
 
+## 📸 Screenshots
+
+|   |   |
+|---|---|
+| ![Screenshot 1](URL_to_Screenshot1)  | ![Screenshot 2](URL_to_Screenshot2)  |
+| *Description for screenshot 1*  | *Description for screenshot 2*  |
+| ![Screenshot 3](URL_to_Screenshot3)  | ![Screenshot 4](URL_to_Screenshot4)  |
+| *Description for screenshot 3*  | *Description for screenshot 4*  |
+| ![Screenshot 5](URL_to_Screenshot1)  | ![Screenshot 6](URL_to_Screenshot2)  |
+| *Description for screenshot 5*  | *Description for screenshot 6*  |
+| ![Screenshot 7](URL_to_Screenshot3)  | ![Screenshot 8](URL_to_Screenshot4)  |
+| *Description for screenshot 7*  | *Description for screenshot 8*  |
+| ![Screenshot 9](URL_to_Screenshot1)  | ![Screenshot 10](URL_to_Screenshot2)  |
+| *Description for screenshot 9*  | *Description for screenshot 10*  |
+| ![Screenshot 11](URL_to_Screenshot3)  | ![Screenshot 12](URL_to_Screenshot4)  |
+| *Description for screenshot 11*  | *Description for screenshot 12*  |
+
+
+
 # 🌐 Overview
 
 **TALKN** - Posting, Engaging, and Talking has never been so rewarding! 💬
