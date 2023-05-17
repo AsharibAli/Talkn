@@ -4,7 +4,7 @@
 
 The app was built with an approach to simplify the end user experience of the Web3 apps. It is running perfectly on all viewports; the end user will not suffer from the usual hassles of the Web3 apps. As a user, no need to go through complicated steps to be a part of this app.
 
-<<<<<<< HEAD
+
 =======
 ## 📸 Screenshots
 
@@ -28,7 +28,6 @@ The app was built with an approach to simplify the end user experience of the We
 Click on the image below to see our platform demo video.
 
 [![Demo Video](http://img.youtube.com/vi/WNIpMgsDyXw/0.jpg)](http://www.youtube.com/watch?v=WNIpMgsDyXw "Talkn | The Platform For Talk and Engage in Web3 | Submission in BNBCHAIN Hackathon ")
->>>>>>> 9e305bfd9cc0e6014b67035cd0e946d6b83a51c3
 
 # 🌐 Overview
 
