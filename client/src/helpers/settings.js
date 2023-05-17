@@ -35,7 +35,7 @@ export const appSettings = {
   copyrightsLink: "https://www.asharib.xyz/",
 
   /* THE NETWORK RPC URL WHERE OUR CONTRACTS ARE DEPOLYED ON */
-  rpcUrl: "https://endpoints.omniatech.io/v1/bsc/testnet/public",
+  rpcUrl: "https://data-seed-prebsc-2-s1.binance.org:8545",
 
   /* THE CHAIN ID of NETWORK WHERE OUR CONTRACTS ARE DEPOLYED ON */
   networkId: 97,
