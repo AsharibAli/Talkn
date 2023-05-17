@@ -108,8 +108,8 @@ export const FAQS = [
       <div className="text-muted">
         <p className="mb-2">Talkn currently support these blockchains:</p>
         <ul className="mb-0 text-white">
+          <li>Binance Smart Chain (Live on Testnet)</li>
           <li>Ethereum</li>
-          <li>Binance Smart Chain</li>
           <li>Polygon</li>
           <li>Celo</li>
         </ul>
