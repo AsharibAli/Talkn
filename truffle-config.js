@@ -44,9 +44,7 @@
 // require('dotenv').config();
 // const { MNEMONIC, PROJECT_ID } = process.env;
 const HDWalletProvider = require("@truffle/hdwallet-provider");
-const mnemonic =
-  "fix tortoise broken announce section oval veteran excite refuse define carry radar";
-
+const mnemonic = process.env.MNEMONIC;
 module.exports = {
   contracts_build_directory: "../client/src/contracts",
 
