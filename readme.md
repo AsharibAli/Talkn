@@ -4,8 +4,6 @@
 
 The app was built with an approach to simplify the end user experience of the Web3 apps. It is running perfectly on all viewports; the end user will not suffer from the usual hassles of the Web3 apps. As a user, no need to go through complicated steps to be a part of this app.
 
-
-=======
 ## 📸 Screenshots
 
 |   |   |
