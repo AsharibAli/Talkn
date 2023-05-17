@@ -45,12 +45,6 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [
-      ">0.3%",
-      "not ie 11",
-      "not dead",
-      "not op_mini all"
-    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
@@ -60,6 +54,9 @@
       "not dead",
       "not op_mini all"
     ]
+  },
+  "engines": {
+    "node": ">=6.0.0"
   },
   "devDependencies": {
     "@openzeppelin/contracts": "^4.4.2"
