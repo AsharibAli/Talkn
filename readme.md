@@ -105,6 +105,7 @@ We've recently published a [comprehensive pitchdeck of Talkn](https://www.talkne
 
 # 🌐 Official Links
 - Website: [https://talknearn.com/](https://talknearn.com/)
+- Official DAPP: [https://app.talknearn.com/](https://app.talknearn.com/)(Live on BNB Chain Testnet)
 - Twitter: [https://twitter.com/talkn_earn](https://twitter.com/talkn_earn)
 - Telegram Group: [https://t.me/TalknGlobal](https://t.me/TalknGlobal)
 - Telegram Channel: [https://t.me/TalknOfficialChannel](https://t.me/TalknOfficialChannel)
