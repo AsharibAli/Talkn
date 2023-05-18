@@ -50,7 +50,7 @@ module.exports = {
 
   plugins: ["truffle-plugin-verify"],
   api_keys: {
-    bscscan: "",
+    bscscan: "YVENYPGG5VBTSRU1TPRXPUTFYBZB3HMTZR",
   },
 
   networks: {

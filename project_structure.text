@@ -20,20 +20,20 @@
     - movie-mock-loader.png
     - movie-mock.png
     - not-found.svg
-    - precache-manifest.67cd1b18cd92268d56fa3ab304ff5fd0.js
+    - precache-manifest.c865ccf7ec687d741186dc85385c7612.js
     - robots.txt
     - service-worker.js
     - static
       - css
-        - 2.15cd5928.chunk.css
-        - 2.15cd5928.chunk.css.map
-        - main.16d3292b.chunk.css
-        - main.16d3292b.chunk.css.map
+        - 2.79263833.chunk.css
+        - 2.79263833.chunk.css.map
+        - main.a03bbd8d.chunk.css
+        - main.a03bbd8d.chunk.css.map
       - js
-        - 2.c2671d55.chunk.js
-        - 2.c2671d55.chunk.js.map
-        - main.9b81b140.chunk.js
-        - main.9b81b140.chunk.js.map
+        - 2.8758ef6a.chunk.js
+        - 2.8758ef6a.chunk.js.map
+        - main.a5b3ab3e.chunk.js
+        - main.a5b3ab3e.chunk.js.map
         - runtime-main.79295583.js
         - runtime-main.79295583.js.map
       - media
@@ -417,5 +417,6 @@
   - 2_deploy_simple_storage.js
 - package-lock.json
 - package.json
+- project_structure.text
 - readme.md
 - truffle-config.js
