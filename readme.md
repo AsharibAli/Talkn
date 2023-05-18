@@ -95,6 +95,7 @@ https://testnet.bnbchain.org/faucet-smart
 - 👤 User Registration
 - 🌟 Review & Rating
 - 😉 Gaseless Transaction
+- ⚡ Like, Retweet, & Share
 - 🎉 and many more...
 
 # 📜 TALKN LITEPAPER
