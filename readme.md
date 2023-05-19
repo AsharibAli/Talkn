@@ -78,8 +78,34 @@ Absolutely, let's continue from the App Features:
 - Polygon
 - Celo
 
+## ✅ Prerequisites
+
+Every user must have Metamask wallet to interact with this product. Checkout how to create Metamask wallet from [here](https://support.metamask.io/hc/en-us/articles/360015489531-Getting-started-with-MetaMask). To use this platform, kindly add the Binance Smart Chain Testnet from [here](https://chainlist.org/chain/97). 
+
 ### 💦 Get Free tBNB faucet to test:
 https://testnet.bnbchain.org/faucet-smart
+
+### ⚙️ Setup Instructions
+Follow the instructions for local environment: The user must have Node.js and npm to run this platform. Just download Node.js from [here](https://nodejs.org/en/download/).
+
+Clone the repo via CLI:
+```sh
+git clone https://github.com/AsharibAli/Talkn
+cd Talkn
+cd client
+```
+
+Install the required packages:
+```sh
+npm install 
+```
+
+In the project directory, you can run:
+```sh
+npm start
+```
+
+- Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## 🛠️ Tech Stack Used:
 - Solidity – building smart contracts.
@@ -99,10 +125,10 @@ https://testnet.bnbchain.org/faucet-smart
 - 🎉 and many more...
 
 # 📜 TALKN LITEPAPER
-We've recently published a [comprehensive litepaper of Talkn](https://talkn.gitbook.io/litepaper/) that encapsulates all the essentials about our platform. This document provides a detailed look into our mission, our technology, our roadmap, and the unique features that set us apart, etc.
+We've published a [comprehensive litepaper of Talkn](https://talkn.gitbook.io/litepaper/) that encapsulates all the essentials about our platform. This document provides a detailed look into our mission, our technology, our roadmap, and the unique features that set us apart, etc.
 
 # 🖥️ TALKN PICHDECK
-We've recently published a [comprehensive pitchdeck of Talkn](https://www.talknearn.com/pitchdeck) that encapsulates all the essentials about our platform. This document provides a detailed look into our products, the problem we're trying to solve, with the solution, etc.
+We've published a [comprehensive pitchdeck of Talkn](https://talknearn.com/pichdeck) that encapsulates all the essentials about our platform. This document provides a detailed look into our products, the problem we're trying to solve, with the solution, etc.
 
 # 🌐 Official Links
 - Website: [https://talknearn.com/](https://talknearn.com/)
