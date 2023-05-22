@@ -50,10 +50,10 @@ export const appSettings = {
   nativeCurrency: "tBNB",
 
   /* IPFS PROJECT ID */
-  ipfsProjectId: process.env.IPFS_PROJECT_ID,
+  IPFSProjectID: "2PkHwhpQKNaGbRDH1gDi9IpsIXL",
 
   /* IPFS PRJECT SECRET KEY */
-  ipfsSecret: process.env.IPFS_SECRET,
+  IPFSSecret: "a67630681fdb558d364dff6663c03193",
 
   /* IPFS DEDICATED GATEWAY NAME */
   IPFSGatewaySubdomain: "talkn",
