@@ -66,6 +66,20 @@ module.exports = {
         ),
       network_id: 97,
     },
+    theta_testnet: {
+      provider: () => {
+        // Replace the private key below with the private key of the deployer wallet.
+        // Make sure the deployer wallet has a sufficient amount of TFuel, e.g. 100 TFuel
+        var deployerPrivateKey = "";
+
+        return new HDWalletProvider({
+          privateKeys: [deployerPrivateKey],
+          providerOrUrl: "https://eth-rpc-api-testnet.thetatoken.org/rpc",
+        });
+      },
+      network_id: 365,
+      gasPrice: 4000000000000,
+    },
     //
     // An additional network, but with some advanced options…
     // advanced: {

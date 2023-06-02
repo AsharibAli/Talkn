@@ -99,6 +99,8 @@ export function configEtherScanUrl(network, account) {
     blockExplorerUrl = "https://alfajores.celoscan.xyz/";
   } else if (network === 80001) {
     blockExplorerUrl = "https://mumbai.polygonscan.com";
+  } else if (network === 365) {
+    blockExplorerUrl = "https://testnet-explorer.thetatoken.org";
   } else {
     blockExplorerUrl = "https://etherscan.io";
   }
