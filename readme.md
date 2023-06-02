@@ -21,12 +21,11 @@ The app was built with an approach to simplify the end user experience of the We
 | ![Subscribe to Someone](https://github.com/AsharibAli/Talkn/assets/102221198/461a25a3-f51d-4d92-ad00-6b52162651f4)  | ![Recent Free Videos](https://github.com/AsharibAli/Talkn/assets/102221198/d54f3265-1ffa-4734-a664-d987a60f8bf9)  |
 | *Subscribe to Someone*  | *Recent Free Videos*  |
 
+## 🎥 Talkn Demo Video
 
+Click on the image below to see our platform demo video.
 
-
-
-
-
+[![Demo Video](http://img.youtube.com/vi/lNe-uGcitoU/0.jpg)](http://www.youtube.com/watch?v=lNe-uGcitoU "Talkn | The Platform For Talk and Engage in Web3 | Submission in Theta Hackathon ")
 
 # 🌐 Overview
 
