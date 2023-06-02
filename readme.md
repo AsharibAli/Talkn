@@ -73,6 +73,7 @@ Absolutely, let's continue from the App Features:
 - 🎉 and many more...
 
 ## 🌐 Supported Blockchains:
+- Theta Testnet (Live on Testnet)
 - BNB Chain (Live on Testnet)
 - Ethereum
 - Polygon
