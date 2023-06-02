@@ -83,8 +83,9 @@ Absolutely, let's continue from the App Features:
 
 Every user must have Metamask wallet to interact with this product. Checkout how to create Metamask wallet from [here](https://support.metamask.io/hc/en-us/articles/360015489531-Getting-started-with-MetaMask). To use this platform, kindly add the Binance Smart Chain Testnet from [here](https://chainlist.org/chain/97). 
 
-### 💦 Get Free tBNB faucet to test:
+### 💦 Get Free tBNB or TFUEL faucet to test:
 https://testnet.bnbchain.org/faucet-smart
+https://wallet.thetatoken.org/wallet/tokens/theta
 
 ### ⚙️ Setup Instructions
 Follow the instructions for local environment: The user must have Node.js and npm to run this platform. Just download Node.js from [here](https://nodejs.org/en/download/).
@@ -133,7 +134,7 @@ We've published a [comprehensive pitchdeck of Talkn](https://talknearn.com/pichd
 
 # 🌐 Official Links
 - Website: [https://talknearn.com/](https://talknearn.com/)
-- Official DAPP: [https://app.talknearn.com/](https://app.talknearn.com/)(Live on BNB Chain Testnet)
+- Official DAPP: [https://app.talknearn.com/](https://app.talknearn.com/)(Live on Theta & BNBChain Testnet)
 - Twitter: [https://twitter.com/talkn_earn](https://twitter.com/talkn_earn)
 - Telegram Group: [https://t.me/TalknGlobal](https://t.me/TalknGlobal)
 - Telegram Channel: [https://t.me/TalknOfficialChannel](https://t.me/TalknOfficialChannel)
