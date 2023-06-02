@@ -81,7 +81,7 @@ Absolutely, let's continue from the App Features:
 
 ## ✅ Prerequisites
 
-Every user must have Metamask wallet to interact with this product. Checkout how to create Metamask wallet from [here](https://support.metamask.io/hc/en-us/articles/360015489531-Getting-started-with-MetaMask). To use this platform, kindly add the Binance Smart Chain Testnet from [here](https://chainlist.org/chain/97). 
+Every user must have Metamask wallet to interact with this product. Checkout how to create Metamask wallet from [here](https://support.metamask.io/hc/en-us/articles/360015489531-Getting-started-with-MetaMask). To use this platform, kindly add the Binance Smart Chain Testnet from [here](https://chainlist.org/chain/97) and Theta Testnet from [here](https://chainlist.org/chain/365). 
 
 ### 💦 Get Free tBNB or TFUEL faucet to test:
 https://testnet.bnbchain.org/faucet-smart
